@@ -6,24 +6,24 @@ let attempt=0;
 let guess;
 let running=true;
 while(running){
-   guess=window.prompt(`Enter a number ${min}-${max}`);
+   guess=window.prompt(`🎯 Guess a number between ${min}-${max}`);
    guess=Number(guess);
    if(isNaN(guess)){
-      window.alert("Please enter a valid number");
+      window.alert("⚠️ oops! That doesn't seem like a number");
    }
    else if(guess < min || guess > max){
-    window.alert(`Enter a number between 1-100`);
+    window.alert(`🚫 please enter a number between ${min} and ${max}.`);
    }
    else{
      attempt++;
      if(guess<ans){
-        window.alert("TOO LOW TRY AGAIN");
+        window.alert("📉 Too low! Try once more!🔁");
      }
      else if(guess>ans){
-        window.alert("TOO HIGH TRY AGAIN");
+        window.alert("📈 Too high! Try once more!🔁");
      }
      else{
-        window.alert(`The correct answer is ${ans} \n It took ${attempt} attempts`);
+        window.alert(`🎉congrats! You guessed it! The correct answer is  ${ans}. It took ${attempt} attempts. 🏆`);
         running=false;
      }
    }
