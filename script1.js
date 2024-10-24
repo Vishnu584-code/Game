@@ -23,7 +23,7 @@ while(running){
         window.alert("📈 Too high! Try once more! 🔁");
      }
      else{
-        window.alert(`🎉 congrats! You guessed it! The correct answer is  ${ans}. It took ${attempt} attempts. 🏆`);
+        window.alert(`🎉 Congrats!  You guessed it!  The correct number is  ${ans}.\n \n It took you ${attempt} attempts. 🏆`);
         running=false;
      }
    }
